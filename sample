@@ -1,6 +1,10 @@
 MINUTES_BEFORE 15
-OVERLAP 1
+OVERLAP 0
 
-M   9:00 10:00 www.youtube.com
-M  10:35 11:05 www.github.com
-M  
+M   9:00 10:00 web1
+M  10:35 11:05 web2
+H   9:00 10:00 web3
+H  13:00 14:00 web4
+H  15:00 15:25 www.google.com
+H  15:30 16:00 www.youtube.com
+F   9:00 10:00 web6

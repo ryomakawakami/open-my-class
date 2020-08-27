@@ -12,9 +12,9 @@ M   9:00 10:00 www.youtube.com
 M  10:35 11:05 www.github.com *
 ```
 
-Settings should be at the top. The schedule is placed below, following a double line break. The format should be day of week (Su M T W R F Sa), start time, end time, URL, and an optional asterisk, each separated by one or more spaces. If the asterisk is there, then that class takes priority when there are two overlapping classes.
+Settings should be at the top. The schedule is placed below, following a double line break. The format should be day of week (M T W R F Sa Su), start time, end time, URL, and an optional asterisk, each separated by one or more spaces. If the asterisk is there, then that class takes priority when there are two overlapping classes.
 
-The user is responsible for correct input (three class times overlapping may cause the middle class to be ignored).
+The user is responsible for correct input (three class times overlapping may cause the last class to be ignored).
 
 The following table shows the settings:
 
@@ -22,12 +22,8 @@ The following table shows the settings:
 | ------------- | ------------- | ------------- |
 | MINUTES_BEFORE | Number of minutes before the class to consider it "during class". | 15 |
 | OVERLAP | In the case of overlapping classes. A value of 0 makes the first class take priority. A value of 1 makes the second class take priority. | 1 |
-| DAYS_OF_WEEK | The abbreviations for days of the week beginning with Sunday, separated by hyphens. | Su-M-T-W-R-F-Sa |
+| DAYS_OF_WEEK | The abbreviations for days of the week beginning with Monday, separated by hyphens. | Su-M-T-W-R-F-Sa |
 
 ------------------------------
 
-TODO:
-
-Figure out data structure for schedule.
-
-Add support for doing something like 'MWF 9:00 10:00 www.google.com'.
+There isn't really a need to create a schedule object. We just assume the inputed schedule is good and only check the line after the first class.
