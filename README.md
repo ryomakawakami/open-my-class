@@ -23,3 +23,11 @@ The following table shows the settings:
 | MINUTES_BEFORE | Number of minutes before the class to consider it "during class". | 15 |
 | OVERLAP | In the case of overlapping classes. A value of 0 makes the first class take priority. A value of 1 makes the second class take priority. | 1 |
 | DAYS_OF_WEEK | The abbreviations for days of the week beginning with Sunday, separated by hyphens. | Su-M-T-W-R-F-Sa |
+
+------------------------------
+
+TODO:
+
+Figure out data structure for schedule.
+
+Add support for doing something like 'MWF 9:00 10:00 www.google.com'.
